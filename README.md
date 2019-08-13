@@ -1,8 +1,13 @@
 # SampleApp
 
-This is a smaller benchmark requested as part of OOPSLA-2019 review process to
-demonstrate the performance benefits of protocols reported in the paper for the
-proprietary application.
+This is a small benchmark to demonstrate the performance benefits of
+the optimizations described in our OOPSLA 2019 paper.  The benchmark
+has a structure mimicking parts of the proprietary application described
+in that paper, and gives an idea of how our optimizations work on
+the proprietary app.
+
+Overview
+--------
 
 The source code is at "Sources/SampleApp/main.swift".
 
