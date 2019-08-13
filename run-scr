@@ -1,0 +1,13 @@
+#!/bin/sh
+
+export SWIFT_EXEC="../bin/swiftc"
+rm -rf .build SampleApp_opt SampleApp_unopt
+cp Package.swift_opt Package.swift 
+swift build -c release --verbose 2>&1 | tee log_opt.txt
+cp .build/release/SampleApp SampleApp_opt
+
+cp Package.swift_unopt Package.swift 
+swift build -c release --verbose 2>&1 | tee log_unopt.txt
+cp .build/release/SampleApp SampleApp_unopt
+
+
